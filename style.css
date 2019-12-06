@@ -1,0 +1,341 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Calibri;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+ 
+i {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#tout p {
+	font-size: 19px;
+}
+
+#tout ul {
+	font-size: 19px;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+header {
+	z-index: 1;
+	width: 100vw;
+	position: fixed;
+	background:grey url("images/imageHeader.jpg") center center repeat;
+	background-size: cover;
+	border-bottom: solid 10px #055182;
+	padding: 25px;
+	padding-left: 0px;
+	display: flex;
+  	justify-content: center;
+	transition: all 0.5s ease;
+}
+
+.scrolled header {
+	border-bottom: solid 5px #055182;
+	padding: 15px;
+}
+
+header h1 {
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+	color: #055182;
+	padding: 20px;
+	padding-right: 30vw; 
+	padding-left: 30vw;
+	transition: all 0.5s ease;
+	font-size: 44px;
+}
+
+.scrolled header h1 {
+	padding: 10px;
+	padding-right: 30vw; 
+	padding-left: 30vw;
+	font-size: 32px;
+}
+/* -------------------------------- HEADER -------------------------------- */
+
+/* -------------------------------- MENU -------------------------------- */
+.menuEntier {
+	width: 300px;
+}
+
+#menu {
+	flex: 1 1 auto;
+	position: fixed;
+	margin-top: 148px;
+	color: white;
+	font-size: 32px;
+	padding: 10px;
+	background-color: rgb(40, 40, 45);
+	transition: .5s;
+}
+
+.scrolled #menu {
+	margin-top: 91px;
+}
+
+#menuContent {
+	flex: 1 1 auto;
+	position: fixed;
+	height: 100vh;
+	padding: 10px;
+	margin-top: 206px;
+	background-color: rgb(40, 40, 45);
+	transition: 0.5s;
+}
+
+#menuContent a {
+	font-weight: bold;
+}
+
+.scrolled #menuContent {
+	margin-top: 149px;
+}
+
+#menu p {
+	float: right;
+	color: white;
+	font-size: 32px;
+}
+
+#menuContent {
+	color: white;
+	text-align: center;
+}
+
+#menuContent div {
+	text-align: left;
+}
+
+#roundedImage {
+    border-radius:100px;
+    width:180px;
+    height:180px;
+}
+
+.menuEntier ul {
+	display: inline-block;
+	/*margin-top: 10px;*/
+}
+
+.menuEntier li {
+	padding: 15px;
+	list-style-type: none;
+	background-color: grey;
+	margin: 10px;
+	border-radius: 50px;
+}
+
+#contact {
+	margin-top: 20px; 
+}
+
+#contact h2 {
+	color: #1786d0;
+	font-size: 22px;
+}
+
+#contact p {
+	text-align: center;
+	padding: 10px;
+	color: silver;
+	font-size: 18px;
+}
+
+#contact a {
+	color: silver;
+}
+/* -------------------------------- MENU -------------------------------- */
+
+/* -------------------------------- SECTION -------------------------------- */
+#tout {
+	margin-top: 160px;
+}
+
+section {
+	margin-left: 325px;
+	transition: 0.5s;
+}
+
+section .desc {
+	margin-top: 160px;
+}
+
+.pate {
+	flex: 1 1 auto;
+	margin: 25px;
+	margin-bottom: 100px;
+	padding: 10px;
+	background-color: #cfcfd0;
+	border: solid 3px #055182;
+	border-radius: 25px 150px;
+}
+
+#tout h1 {
+	color: #1786d0;
+	margin: 10px;
+	font-size: 50px;
+}
+
+#tout h2 {
+	color: #1786d0;
+	margin: 10px;
+	font-size: 30px;
+}
+
+#tout h2 i {
+	color: #1786d0;
+}
+
+article {
+	margin-bottom: 50px;
+	margin-right: 10px;
+	padding: 10px;
+}
+
+section p i {
+	color: #055182
+}
+
+section p {
+	padding: 5px;
+}
+
+section ul {
+	margin-left: 100px;
+}
+
+section li {
+	padding: 5px;
+	list-style-type: square;
+}
+
+#tout p {
+	margin-left: 50px;
+}
+
+/* -------------------------------- PROJETS -------------------------------- */
+#portfolio div {
+	display: inline-block;
+}
+
+.image{
+	display: inline-block;
+	margin: 10px;
+	margin-right: 2px;
+	width: 31%;
+	padding-top: 17%;
+	border-radius: 10px;
+	transition: .5s ease;
+}
+
+.image:hover {
+	color: white;
+	border-bottom: solid #055182 10px;
+	border-left: solid #055182 10px;
+	background-color: rgb(97,97,97,0.7);
+	transition: .5s ease;
+}
+
+.image p {
+	color: white;
+	border-radius: 10px;
+	padding: 30px 0px 30px 0px !important;
+	margin: 100px 0px 0px 0px !important;
+	font-size: 3vw !important;
+	text-align: center; 
+	background-color: rgb(80,80,80,0.4);
+	transition: .5s ease;
+}
+
+.imgProjets {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+
+.imgProjets p {
+	flex: 500px;
+}
+/* -------------------------------- PROJETS -------------------------------- */
+
+/* -------------------------------- SKILLBAR -------------------------------- */
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:5px;
+	transition:0.1s linear;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:15px;
+	color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 10px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:5px;
+	transition: 2s ease;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:13px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+#levels {
+	margin-left: 45px;
+}
+/* -------------------------------- SKILLBAR -------------------------------- */
+/* -------------------------------- SECTION -------------------------------- */
+
+
+/* -------------------------------- FOOTER -------------------------------- */
+footer {
+	background-color: grey;
+	color: white;
+	padding: 50px;
+	margin-left: 320px;
+	text-align: center;
+	transition: 0.5s;
+}
+/* -------------------------------- FOOTER -------------------------------- */
